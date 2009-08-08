@@ -1,8 +1,9 @@
 takanori, Author
+
 Mads Kiilerich, Danish translator
 Klaus Raasch, German translator
 Giorgio Borelli, Italiano translator
 Tom-Wilkin Martinussen, Norsk translator
-Davi Lima, Portugues do Brasil translator
+Davi Lima, Brazilian Portuguese translator
 Michael Krishtopa, Russian and Ukrainian translator
 
