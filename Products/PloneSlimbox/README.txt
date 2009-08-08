@@ -1,56 +1,45 @@
-Introduction
-============
+Description
 
-This is a full-blown functional test. The emphasis here is on testing what
-the user may input and see, and the system is largely tested as a black box.
-We use PloneTestCase to set up this test as well, so we have a full Plone site
-to play with. We *can* inspect the state of the portal, e.g. using 
-self.portal and self.folder, but it is often frowned upon since you are not
-treating the system as a black box. Also, if you, for example, log in or set
-roles using calls like self.setRoles(), these are not reflected in the test
-browser, which runs as a separate session.
+  Plone Slimbox beta version
 
-Being a doctest, we can tell a story here.
+  - Slimbox for atct album view and COREBlog2 attachment image view.
 
-First, we must perform some setup. We use the testbrowser that is shipped
-with Five, as this provides proper Zope 2 integration. Most of the 
-documentation, though, is in the underlying zope.testbrower package.
+  - "Slimbox 2, the ultimate lightweight Lightbox clone for?jQuery":http://www.digitalia.be/software/slimbox2 
 
-    >>> from Products.Five.testbrowser import Browser
-    >>> browser = Browser()
-    >>> portal_url = self.portal.absolute_url()
+  - "Lightbox JS v2.0":http://www.huddletogether.com/projects/lightbox2/
 
-The following is useful when writing and debugging testbrowser tests. It lets
-us see all error messages in the error_log.
+Installation
 
-    >>> self.portal.error_log._ignored_exceptions = ()
+  - Extract the product in Products folder
 
-With that in place, we can go to the portal front page and log in. We will
-do this using the default user from PloneTestCase:
+  - Restart the server
 
-    >>> from Products.PloneTestCase.setup import portal_owner, default_password
+  - Use QuickInstaller to install skin in your Plone Site:
+    'Plone Control Panel' -> 'Add/remove Products'
 
-    >>> browser.open(portal_url)
+  - View **atct album view** or **COREBlog2 attachment images**
+    and click thumbnails.
 
-We have the login portlet, so let's use that.
+Requirements
 
-    >>> browser.getControl(name='__ac_name').value = portal_owner
-    >>> browser.getControl(name='__ac_password').value = default_password
-    >>> browser.getControl(name='submit').click()
+  Plone Slimbox is dependent on:
 
-Here, we set the value of the fields on the login form and then simulate a
-submit click.
+  - Zope 2.8.x or higher 
 
-We then test that we are still on the portal front page:
+  - Plone 2.1.x or higher(2.5, 3.0, 3.1, 3.2)
 
-    >>> browser.url == portal_url
-    True
+  - "Python Imaging Library (PIL)":http://www.pythonware.com/products/pil/
 
-And we ensure that we get the friendly logged-in message:
+  - Optional support product
 
-    >>> "You are now logged in" in browser.contents
-    True
+    - "COREBlog2":http://coreblog.org/ 0.9b or higher
 
+Author
 
--*- extra stuff goes here -*-
+  - "Suzuki, Takanori":mailto:takanori@takanory.net
+    ("http://takanory.net/":http://takanory.net/)
+
+Licence
+
+  - "MIT License":http://www.opensource.org/licenses/mit-license.php
 
