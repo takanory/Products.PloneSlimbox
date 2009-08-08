@@ -1,0 +1,20 @@
+<strong tal:content="context/pretty_title_or_id">title</strong>
+<tal:block tal:condition="context/Description"
+           tal:content="string:- ${context/Description}">
+    - description
+</tal:block>
+<br />
+<a href="#" title="Click to view full-size image..."
+   tal:attributes="href string:${context/absolute_url}/image_view_fullscreen"
+   i18n:translate=""
+   i18n:attributes="title"
+   i18n:domain="slimbox">
+  full-size
+</a>
+<a href="#" title="Click to plone image view..."
+   tal:attributes="href string:${context/absolute_url}/view"
+   i18n:translate=""
+   i18n:attributes="title"
+   i18n:domain="slimbox">
+  plone view
+</a>

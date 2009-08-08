@@ -1,0 +1,21 @@
+<html xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      i18n:domain="plone">
+<body>
+
+<metal:lightbox_macro define-macro="photo">
+  <a href="#" rel="lightbox"
+     tal:attributes="href string:${image/absolute_url}/image_preview;
+                     title image/lightbox_title;
+                     rel string:lightbox-${here/id}">
+    <span class="photoAlbumEntryWrapper">
+      <img src="" alt="" tal:replace="structure python:image.tag(scale='thumb', title=image.Description())" />
+    </span>
+    <span class="photoAlbumEntryTitle" tal:content="image/pretty_title_or_id">
+      Title
+    </span>
+  </a>
+</metal:lightbox_macro>
+
+</body>
+</html>

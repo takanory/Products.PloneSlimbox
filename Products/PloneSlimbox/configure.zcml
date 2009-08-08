@@ -1,0 +1,20 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="Products.PloneSlimbox">
+
+  <!--<five:registerPackage package="." initialize=".initialize" />-->
+
+  <!-- Register the installation GenericSetup extension profile -->
+  <genericsetup:registerProfile
+      name="default"
+      title="PloneSlimbox"
+      directory="profiles/default"
+      description="Slimbox(Lightweight Lightbox clone) for atct album view and COREBlog2 attachment image view."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+  
+  <!-- -*- extra stuff goes here -*- -->
+
+</configure>
