@@ -36,7 +36,7 @@ Requirements
 
 Author
 
-  - "Suzuki, Takanori":mailto:takanori@takanory.net
+  - Suzuki, Takanori
     ("http://takanory.net/":http://takanory.net/)
 
 Licence
