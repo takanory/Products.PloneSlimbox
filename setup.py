@@ -36,7 +36,7 @@ tests_require=['zope.testing']
 
 setup(name='Products.PloneSlimbox',
       version=version,
-      description="Slimbox(Lightweight Lightbox clone) for atct album view and COREBlog2 attachment image view.",
+      description="Slimbox(Lightweight Lightbox clone) for atct album view and COREBlog2 attachment image view for Plone.",
       long_description=long_description,
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
