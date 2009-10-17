@@ -5,3 +5,4 @@
 - Tom-Wilkin Martinussen, Norsk translator
 - Davi Lima, Brazilian Portuguese translator
 - Michael Krishtopa, Russian and Ukrainian translator
+- Kim Paulissen, Dutch translator
