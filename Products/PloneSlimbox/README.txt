@@ -34,7 +34,7 @@ Plone Slimbox is dependent on:
 
 Author
 ======
-- Suzuki, Takanori(http://takanory.net/)
+- Takanori Suzuki(http://takanory.net/)
 
 Licence
 =======
