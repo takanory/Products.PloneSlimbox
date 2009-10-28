@@ -17,5 +17,15 @@
   </a>
 </metal:lightbox_macro>
 
+<metal:lightbox_macro define-macro="newsitem">
+  <a href="#" rel="lightbox"
+     id="parent-fieldname-image"
+     tal:attributes="href string:${here/absolute_url}/image_preview;
+                     title context/lightbox_title_newsitem;
+                     rel string:lightbox">
+    <img tal:replace="structure python: here.tag(scale='mini', css_class='newsImage')" src="" alt="" />
+  </a>
+</metal:lightbox_macro>
+
 </body>
 </html>

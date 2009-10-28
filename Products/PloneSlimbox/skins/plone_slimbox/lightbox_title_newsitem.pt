@@ -1,0 +1,10 @@
+<strong tal:content="context/pretty_title_or_id">title</strong>
+- <span tal:replace="context/imageCaption" />
+<br />
+<a href="#" title="Click to view full-size image..."
+   tal:attributes="href string:${here/absolute_url}/image/image_view_fullscreen"
+   i18n:translate=""
+   i18n:attributes="title"
+   i18n:domain="slimbox">
+  full-size
+</a>
