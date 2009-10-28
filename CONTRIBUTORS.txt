@@ -6,3 +6,4 @@
 - Davi Lima, Brazilian Portuguese translator
 - Michael Krishtopa, Russian and Ukrainian translator
 - Kim Paulissen, Dutch translator
+- Tsungwei Hu, Chinese(Taiwan) translator
