@@ -8,7 +8,7 @@ from setuptools import setup, find_packages
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
-version = '0.5.1'
+version = '0.6'
 
 long_description = (
     read('README.txt')
@@ -44,7 +44,7 @@ setup(name='Products.PloneSlimbox',
         'Intended Audience :: Developers',
         'Topic :: Software Development :: Libraries :: Python Modules',
         ],
-      keywords='Plone PlooneSlimbox',
+      keywords='Plone PloneSlimbox Lightbox Slimbox',
       author='takanori',
       author_email='takanori@takanory.net',
       url='http://plone.org/products/plone-slimbox/',
