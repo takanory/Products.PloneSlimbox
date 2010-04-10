@@ -19,6 +19,10 @@
                  templateId template/getId;
                  batch python:Batch(images, 12, int(b_start), orphan=1)">
 
+    <div tal:repeat="image python:images[:batch.start-1]">
+         <div metal:use-macro="here/lightbox_macros/macros/prevnext" />
+    </div>
+
     <div tal:replace="structure provider:plone.abovecontenttitle" />
 
     <h1 tal:content="here/pretty_title_or_id" class="documentFirstHeading">Title or id</h1>
@@ -97,6 +101,10 @@
     <metal:subtopics use-macro="here/atct_topic_view/macros/folderlisting_macro" />
 
     <div tal:replace="structure provider:plone.belowcontentbody" />
+
+    <div tal:repeat="image python:images[batch.end:]">
+         <div metal:use-macro="here/lightbox_macros/macros/prevnext" />
+    </div>
 
 </metal:main_macro>
 </div>

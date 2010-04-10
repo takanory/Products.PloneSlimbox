@@ -25,6 +25,10 @@
                  b_start python:request.get('b_start', 0);
                  batch python:Batch(images, 12, int(b_start), orphan=1)">
 
+    <div tal:repeat="image python:images[:batch.start-1]">
+         <div metal:use-macro="here/lightbox_macros/macros/prevnext" />
+    </div>
+
     <div metal:use-macro="here/document_actions/macros/document_actions">
         Document actions (print, sendto etc)
     </div>
@@ -86,6 +90,10 @@
     </tal:listing>
 
     <metal:subtopics use-macro="here/atct_topic_view/macros/folderlisting_macro" />
+
+    <div tal:repeat="image python:images[batch.end:]">
+         <div metal:use-macro="here/lightbox_macros/macros/prevnext" />
+    </div>
 
 </metal:main_macro>
 </div>
