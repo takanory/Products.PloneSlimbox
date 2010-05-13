@@ -1,9 +1,15 @@
 Changelog
 =========
 
+0.6.2 (2010-05-13)
+------------------
+- Update Slimbox2 script v2.04
+  [takanori]
+
 0.6.1 (2010-04-10)
 ------------------
-- Change the slideshow object to all images in the folder[takanori]
+- Change the slideshow object to all images in the folder
+  [takanori]
 
 0.6 (2009-10-28)
 ------------------
