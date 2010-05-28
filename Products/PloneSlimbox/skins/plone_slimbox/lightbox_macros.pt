@@ -19,7 +19,9 @@
     <span class="photoAlbumEntryWrapper">
       <img src="" alt="" tal:replace="structure python:image.tag(scale='thumb', title=image.Description())" />
     </span>
-    <span class="photoAlbumEntryTitle" tal:content="image/pretty_title_or_id">
+    <span class="photoAlbumEntryTitle" title=""
+          tal:content="image/pretty_title_or_id"
+	  tal:attributes="title image/pretty_title_or_id">
       Title
     </span>
   </a>
