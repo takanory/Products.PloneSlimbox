@@ -15,9 +15,14 @@
   <a href="#" rel="lightbox"
      tal:attributes="href string:${image/absolute_url}/image_preview;
                      title image/lightbox_title;
-                     rel string:lightbox-${here/id}">
+                     rel string:lightbox-${here/id};">
     <span class="photoAlbumEntryWrapper">
-      <img src="" alt="" tal:replace="structure python:image.tag(scale='thumb', title=image.Description())" />
+      <img src="" alt=""
+           tal:condition="image/Description"
+           tal:replace="structure python:image.tag(scale='thumb', title=image.Description())" />
+      <img src="" alt=""
+           tal:condition="not: image/Description"
+           tal:replace="structure python:image.tag(scale='thumb', title=image.pretty_title_or_id())" />
     </span>
     <span class="photoAlbumEntryTitle" title=""
           tal:content="image/pretty_title_or_id"
