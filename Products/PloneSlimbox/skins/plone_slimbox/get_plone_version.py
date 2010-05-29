@@ -7,7 +7,10 @@
 ##parameters=
 ##title=
 ##
-version = context.portal_migration.getInstanceVersion().split('.')
+try:
+  version = context.portal_migration.getSoftwareVersion().split('.')
+except:
+  version = context.portal_migration.getInstanceVersion().split('.')
 ver = (version[0] + version[1])[:2]
 if ver == '31':
     ver = '30'
