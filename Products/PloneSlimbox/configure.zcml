@@ -1,10 +1,9 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
-    i18n_domain="Products.PloneSlimbox">
-
-  <!--<five:registerPackage package="." initialize=".initialize" />-->
+    i18n_domain="slimbox">
 
   <!-- Register the installation GenericSetup extension profile -->
   <genericsetup:registerProfile
