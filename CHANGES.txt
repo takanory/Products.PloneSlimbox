@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.7 (2010-07-02)
+-----------------
+- Add plone 4 support
+  [takanori]
+
 0.6.2 (2010-05-13)
 ------------------
 - Update Slimbox2 script v2.04
