@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.7.1 (2011-07-25)
+------------------
+- Add plone 4.1 support
+  [takanori]
+
 0.7 (2010-07-02)
 -----------------
 - Add plone 4 support

@@ -16,4 +16,6 @@ if ver == '31':
     ver = '30'
 elif ver == '33':
     ver = '32'
+elif ver == '41':
+    ver = '40'
 return ver
