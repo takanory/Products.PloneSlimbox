@@ -1,6 +1,13 @@
 Changelog
 =========
 
+0.7.2 (unreleased)
+------------------
+- Simplified get_plone_version so it can handle incoming
+  Plone versions.
+  [vpretre]
+
+
 0.7.1 (2011-07-25)
 ------------------
 - Add plone 4.1 support
