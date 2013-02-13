@@ -12,10 +12,15 @@ try:
 except:
   version = context.portal_migration.getInstanceVersion().split('.')
 ver = (version[0] + version[1])[:2]
-if ver == '31':
-    ver = '30'
-elif ver == '33':
-    ver = '32'
-elif ver == '41':
-    ver = '40'
+
+try:
+    int_ver = int(ver)
+except ValueError:
+    return ver
+
+available = [40, 32, 30, 25, 21]
+for av in available:
+    if int_ver >= av:
+        return str(av)
+
 return ver
